@@ -28,6 +28,7 @@ file_handler.setFormatter(formatter)
 # Add the handlers to the logger to enable logging to both console and file 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+logger.propagate = False
 
 # Load the data from the interim folder
 # Use type hints for better code clarity
