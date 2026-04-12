@@ -7,7 +7,9 @@
 4) Since changes are made, now do git add,commit,push
 
 ## Setting up DVC pipeline (without params):
+5> Create dvc.yaml file and add stages to it.
+6> dvc init then do "dvc repro" to test the pipeline automation. (check dvc dag)
+7> Now git add, commit, push
 
-
-## Visualising the pipeline (how components are connected to each other)
+### Visualising the pipeline (how components are connected to each other)
 ![alt text](image.png)
