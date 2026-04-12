@@ -5,3 +5,9 @@
 2) Add src folder along with all components(run them individually)
 3) Add data,models,reports directories to .gitignore file
 4) Since changes are made, now do git add,commit,push
+
+## Setting up DVC pipeline (without params):
+
+
+## Visualising the pipeline (how components are connected to each other)
+![alt text](image.png)
