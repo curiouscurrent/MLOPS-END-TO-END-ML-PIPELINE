@@ -1,7 +1,7 @@
-# Artifacts to be ignored by git and tracked by dvc
-D:\MLOPS\MLOPS-END-TO-END-ML-PIPELINE\data
-D:\MLOPS\MLOPS-END-TO-END-ML-PIPELINE\models
-D:\MLOPS\MLOPS-END-TO-END-ML-PIPELINE\reports
+#Artifacts (o/p of each component) to be ignored by git and tracked by dvc.
+data
+models
+reports
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
