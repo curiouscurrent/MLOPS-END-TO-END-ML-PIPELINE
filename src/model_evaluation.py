@@ -28,6 +28,7 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+logger.propagate = False
 
 # Load the model from models folder
 def load_model(file_path: str):
