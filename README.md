@@ -24,6 +24,7 @@
 params.yaml setup:
 1) import yaml
 2) add func:
+```
 def load_params(params_path: str) -> dict:
     """Load parameters from a YAML file."""
     try:
@@ -40,7 +41,9 @@ def load_params(params_path: str) -> dict:
     except Exception as e:
         logger.error('Unexpected error: %s', e)
         raise
+```
 3) Add to main():
+```
 
 # data_ingestion
 params = load_params(params_path='params.yaml')
@@ -52,3 +55,4 @@ max_features = params['feature_engineering']['max_features']
 
 # model_building
 params = load_params('params.yaml')['model_building']
+```
