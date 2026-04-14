@@ -38,7 +38,11 @@ pip install dvc[s3]
 ```
 pip install awscli
 ```
-24) "aws configure" on terminal
+24) Configure IAM User with project
+```
+aws configure
+```
+
 
 ### Logging setup
 ```
