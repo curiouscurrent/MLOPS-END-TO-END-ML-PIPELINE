@@ -17,8 +17,31 @@
 10) Do "dvc repro" again to test the pipeline along with the params
 11) Now git add, commit, push
 
-### Visualising the pipeline (how components are connected to each other)
-![alt text](image.png)
+### Logging setup
+```
+# Ensure the "logs" directory exists
+log_dir = 'logs'
+os.makedirs(log_dir, exist_ok=True)
+
+# logging configuration
+logger = logging.getLogger('model_building')
+logger.setLevel('DEBUG')
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel('DEBUG')
+
+log_file_path = os.path.join(log_dir, 'model_building.log')
+file_handler = logging.FileHandler(log_file_path)
+file_handler.setLevel('DEBUG')
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
+logger.propagate = False
+```
 
 ### Params setup
 params.yaml setup:
@@ -56,3 +79,6 @@ max_features = params['feature_engineering']['max_features']
 # model_building
 params = load_params('params.yaml')['model_building']
 ```
+### Visualising the pipeline (how components are connected to each other)
+![alt text](image.png)
+
