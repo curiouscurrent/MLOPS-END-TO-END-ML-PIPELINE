@@ -26,6 +26,20 @@
 17) Change params, re-run code (produce new experiments)
 18) Now git add, commit, push
 
+## Adding Remote S3 Storage to DVC
+19) Login to AWS console
+20) Create an IAM User
+21) Create S3 bucket
+22) To connect DVC to S3
+```
+pip install dvc[s3]
+```
+23) To connect to aws
+```
+pip install awscli
+```
+24) "aws configure" on terminal
+
 ### Logging setup
 ```
 # Ensure the "logs" directory exists
