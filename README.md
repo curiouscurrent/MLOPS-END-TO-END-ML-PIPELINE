@@ -110,3 +110,6 @@ with Live(save_dvc_exp=True) as live:
 ### Visualising the pipeline (how components are connected to each other)
 ![alt text](image.png)
 
+### Live Experiment tracking with DVCLIVE output
+![alt text](image-2.png)
+
