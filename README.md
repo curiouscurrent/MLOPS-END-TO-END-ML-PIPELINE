@@ -43,6 +43,19 @@ pip install awscli
 aws configure
 ```
 
+25) sets the remote storage address in .dvc/config
+```
+dvc remote add -d dvcstore s3://bucketname
+```
+26) dvc commit,push the exp outcome that you want to keep
+dvc tracks the outcome of each component in the pipeline,
+the data that belongs to the pipeline is tracked. 
+```
+dvc commit
+dvc push
+```
+27) Finally git add,commit,push
+
 
 ### Logging setup
 ```
