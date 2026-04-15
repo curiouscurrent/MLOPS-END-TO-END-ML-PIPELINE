@@ -55,6 +55,10 @@ dvc commit
 dvc push
 ```
 27) Finally git add,commit,push
+28) To rollback to a previous code version, fetch the commit hash and then do 
+```
+dvc pull
+```
 
 
 ### Logging setup
@@ -143,4 +147,7 @@ with Live(save_dvc_exp=True) as live:
 
 ### Live Experiment tracking with DVCLIVE output
 ![alt text](image-2.png)
+
+### Pushed data to AWS S3 bucket
+![alt text](image-3.png)
 
